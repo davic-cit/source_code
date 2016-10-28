@@ -10,7 +10,8 @@ source codes passed through other websites using cookies to store the values.
 INSTALLATION
 ------------
 
- * Just download the javascript file and add it to your project
+ * Just download the project from the [releases](https://github.com/davic-cit/source_code/releases) page
+ and add it to your website.
 
 
 CONFIGURATION
@@ -19,14 +20,14 @@ CONFIGURATION
  * To use it, simply call the main function trackSourceCode() on a Document ready
  event.
  * The function expects three parameters:
-   ## targetWebsite
+   #### targetWebsite
      - This parameter is the base for the script to scan through the 'a' tags on
      the website and locate which links will have interaction with the source
      code. All links that refer to this website will be added to the queue of
      links that must contain a source code.  
        Examples: 'google.com', 'youtube.com/channel'.
 
-   ## defaultTrackingCode
+   #### defaultTrackingCode
      - This parameter is the default tracking code to add to the links if there is
      no custom tracking code on the cookies nor on the URL.
      * If there is no default tracking code for the website, the parameter
@@ -34,7 +35,7 @@ CONFIGURATION
      to the links if there is nothing custom.  
        Examples: 'CODE123', null.
 
-   ## paramPattern
+   #### paramPattern
      - This parameter is the name of the parameter that might be in the URL for
      the script to track if there is any custom source code and handle it with
      cookies.  
