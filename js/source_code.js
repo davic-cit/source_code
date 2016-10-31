@@ -53,6 +53,12 @@ function linkIterator(linkTags, targetWebsite, paramPattern, defaultTrackingCode
       return;
     }
 
+    // Skip this loop if the actual link already contains
+    // a source code.
+    if (jQuery(this).attr('href').indexOf(paramPattern) !== -1) {
+      return;
+    }
+
     // Set the default value and override it if the cookie is set.
     var paramValue = defaultTrackingCode;
     if (cookieSet === true) {
