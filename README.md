@@ -24,7 +24,10 @@ CONFIGURATION
      - This parameter is the base for the script to scan through the 'a' tags on
      the website and locate which links will have interaction with the source
      code. All links that refer to this website will be added to the queue of
-     links that must contain a source code.  
+     links that must contain a source code. *The source code will be appended
+     to the end of the link, which means that if your target website is 
+     'example.com', and you have a link like 'example.com/test', after the
+     code adds the source code, it'll end up like 'example.com/test?pattern=xx'*
        Examples: 'google.com', 'youtube.com/channel'.
 
    #### defaultTrackingCode
@@ -52,6 +55,6 @@ automatically from a choosable form field of the website.
 CREDITS
 ---------------------------
 
-Davi Cunha <davic@ciandt.com>
-Jessica Cazotto <jessica@ciandt.com>
-Felipe Campos <felipeoc@ciandt.com>
+Davi Cunha <davic@ciandt.com>  
+Jessica Cazotto <jessica@ciandt.com>  
+Felipe Campos <felipeoc@ciandt.com>  
